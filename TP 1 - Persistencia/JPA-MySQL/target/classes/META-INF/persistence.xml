@@ -12,7 +12,7 @@
 		<properties>
 <!--{		Propiedades de configuracion de JDBC para MySQL			} -->
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/exampleDB" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/exampleBD?createDatabaseIfNotExist=true" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="password" />
 			
