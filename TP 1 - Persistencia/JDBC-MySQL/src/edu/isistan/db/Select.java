@@ -33,15 +33,18 @@ public class Select {
 		//una vez configurado el driver, tenemos que conectarnos a la BD
 		//para esto necesitamos definir la direccion donde esta la BD:
 		
+
+		//String uri = "jdbc:mysql://localhost:8889/example";
+		
 		//docker puerto 3306
-		String uri = "jdbc:mysql://localhost:8889/example";
+		String uri = "jdbc:mysql://localhost:3306/example";
 		
 		//una vez definida la uri, creamos la conexion 
 		//selecciono la connection que viene de java.sql
 		//como puede surgir un problema, rodeo con try catch
 		try {
 			//abro la conexion
-			Connection conn = DriverManager.getConnection(uri, "root", "root");
+			Connection conn = DriverManager.getConnection(uri, "root", "password");
 			conn.setAutoCommit(false);
 			
 			//aca todo lo que querramos hacer por ejemplo:

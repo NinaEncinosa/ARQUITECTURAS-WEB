@@ -22,7 +22,7 @@ public class BaseDeDatos {
 		}
 		
 		//path usando docker 3306
-		String uri = "jdbc:mysql://localhost:3306/example";
+		String uri = "jdbc:mysql://localhost:3306/example?createDatabaseIfNotExist=true";
 		
 		//path usando MAMP
 		//String uri = "jdbc:mysql://localhost:8889/example";
